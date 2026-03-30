@@ -1,0 +1,63 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "A custom bed product (mattress, base, headboard, etc.)",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Product name" },
+        "description": { "type": "string", "description": "Product description" },
+        "price": { "type": "number", "description": "Product price" },
+        "category": { "type": "string", "description": "Product category (mattress, base, etc.)" },
+        "stock": { "type": "number", "description": "Current stock count" },
+        "images": { "type": "array", "items": { "type": "string" }, "description": "Array of image URLs" },
+        "features": { "type": "array", "items": { "type": "string" }, "description": "Key features of the product" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" }
+      },
+      "required": ["name", "price", "category", "stock"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "A custom bed order placed by a customer",
+      "type": "object",
+      "properties": {
+        "customerName": { "type": "string", "description": "Customer's full name" },
+        "customerEmail": { "type": "string", "description": "Customer's email address" },
+        "items": { "type": "array", "items": { "type": "object" }, "description": "List of products ordered" },
+        "customDetails": { "type": "string", "description": "Customization requests" },
+        "status": { "type": "string", "enum": ["pending", "processing", "shipped", "delivered"], "description": "Order status" },
+        "totalPrice": { "type": "number", "description": "Total order price" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Order timestamp" }
+      },
+      "required": ["customerName", "customerEmail", "items", "status", "totalPrice"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Product category",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Category name" },
+        "slug": { "type": "string", "description": "URL-friendly slug" },
+        "description": { "type": "string", "description": "Category description" },
+        "image": { "type": "string", "description": "Category thumbnail image" }
+      },
+      "required": ["name", "slug"]
+    },
+    "User": {
+      "title": "User",
+      "description": "System user with roles",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "description": "User email" },
+        "role": { "type": "string", "enum": ["admin", "customer"], "description": "User role" }
+      },
+      "required": ["email", "role"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": { "schema": "Product", "description": "Collection of bed products" },
+    "/orders/{orderId}": { "schema": "Order", "description": "Collection of customer orders" },
+    "/categories/{categoryId}": { "schema": "Category", "description": "Collection of product categories" },
+    "/users/{userId}": { "schema": "User", "description": "User profiles and roles" }
+  }
+}
