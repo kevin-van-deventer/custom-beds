@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { MessageSquare, PenTool, Hammer, Truck, Sparkles, Ruler, Palette, ShieldCheck, ArrowRight } from 'lucide-react';
 import BespokeOrderModal from '../../components/common/BespokeOrderModal';
+import SEO from '../../components/common/SEO';
 
 const CustomBeds = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,6 +43,11 @@ const CustomBeds = () => {
 
   return (
     <div className="bg-paper min-h-screen overflow-hidden">
+      <SEO 
+        title="Bespoke Sanctuaries | Custom Bed Design Journey"
+        description="Experience the Custom Beds Atelier. From initial discovery to master craftsmanship, co-create your perfect sleep sanctuary with our bespoke design journey."
+        canonical="https://ais-pre-wur55bydyivnzlcfihylb7-161884020965.asia-southeast1.run.app/custom-beds"
+      />
       {/* Immersive Hero Section: Branded & Custom */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}

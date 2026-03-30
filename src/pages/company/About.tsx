@@ -11,7 +11,7 @@ const About = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/custom_beds_for_all_room_setups.png"
-            alt="LuxeBed Craftsmanship"
+            alt="Custom Beds Craftsmanship"
             className="w-full h-full object-cover opacity-40 brightness-[0.6]"
             referrerPolicy="no-referrer"
           />
@@ -24,7 +24,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-gold text-xs uppercase tracking-[0.5em] mb-8 font-bold">The Heritage of LuxeBed</p>
+            <p className="text-gold text-xs uppercase tracking-[0.5em] mb-8 font-bold">The Heritage of Custom Beds</p>
             <h1 className="text-white text-6xl md:text-9xl font-serif mb-12 leading-[0.9] tracking-tight">
               Crafting the <br /> <span className="italic">Future of Sleep</span>
             </h1>
@@ -53,7 +53,7 @@ const About = () => {
             <h2 className="text-5xl md:text-7xl font-serif leading-tight">A Legacy of <br /><span className="italic">Excellence</span></h2>
             <div className="space-y-6 text-ink/70 leading-relaxed text-lg">
               <p>
-                Founded in the heart of London, LuxeBed began as a small atelier dedicated to the pursuit of the perfect night's rest. Our founder, a master upholsterer with a vision, realized that true luxury isn't just about appearance—it's about the profound restoration that only a custom-tailored bed can provide.
+                Founded in the heart of London, Custom Beds began as a small atelier dedicated to the pursuit of the perfect night's rest. Our founder, a master upholsterer with a vision, realized that true luxury isn't just about appearance—it's about the profound restoration that only a custom-tailored bed can provide.
               </p>
               <p>
                 Over two decades later, we remain a family-owned business, committed to the same principles of uncompromising quality and bespoke service that defined our very first creations.
@@ -96,7 +96,7 @@ const About = () => {
       <section className="bg-paper py-32">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-24">
-            <p className="text-gold text-xs uppercase tracking-[0.4em] mb-4 font-bold">The LuxeBed Standard</p>
+            <p className="text-gold text-xs uppercase tracking-[0.4em] mb-4 font-bold">The Custom Beds Standard</p>
             <h2 className="text-5xl md:text-7xl font-serif italic">Uncompromising Detail</h2>
           </div>
           
@@ -237,7 +237,7 @@ const About = () => {
             <h2 className="text-5xl md:text-7xl font-serif leading-tight">Meet the <br /><span className="italic">Masterminds</span></h2>
             <div className="space-y-6 text-ink/70 leading-relaxed text-lg">
               <p>
-                LuxeBed is more than a brand; it's a collective of passionate artisans, designers, and dreamers. Led by our founder Julian Thorne, our team brings together over a century of combined expertise in fine upholstery, textile science, and ergonomic design.
+                Custom Beds is more than a brand; it's a collective of passionate artisans, designers, and dreamers. Led by our founder Julian Thorne, our team brings together over a century of combined expertise in fine upholstery, textile science, and ergonomic design.
               </p>
               <p>
                 Every stitch, every layer of natural filling, and every hand-tufted detail is a testament to our shared commitment to excellence. We don't just build beds; we curate the foundation of your well-being.
@@ -277,7 +277,7 @@ const About = () => {
           <h3 className="text-3xl md:text-5xl font-serif mb-6 italic">"Our hands tell the story of your rest."</h3>
           <div className="flex items-center justify-center space-x-4">
             <div className="h-[1px] w-12 bg-gold/50"></div>
-            <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-gold">The LuxeBed Collective</p>
+            <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-gold">The Custom Beds Collective</p>
             <div className="h-[1px] w-12 bg-gold/50"></div>
           </div>
         </motion.div>

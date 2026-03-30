@@ -57,7 +57,7 @@ const Experience = () => {
               <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-6 font-bold">The Heritage</p>
               <h2 className="text-5xl md:text-7xl font-serif mb-8 leading-tight">Born from a <br /> Passion for <br /> <span className="italic">Restoration</span></h2>
               <p className="text-ink/60 text-lg leading-relaxed font-light">
-                LuxeBed was founded on the belief that sleep is the ultimate luxury. Our story began in a small London atelier, where we set out to redefine the relationship between the body and the bed.
+                Custom Beds was founded on the belief that sleep is the ultimate luxury. Our story began in a small London atelier, where we set out to redefine the relationship between the body and the bed.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-12">
@@ -193,7 +193,7 @@ const Experience = () => {
           <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-6 font-bold">Service Beyond Compare</p>
           <h2 className="text-5xl md:text-7xl font-serif mb-12">The Concierge <br /> <span className="italic">Promise</span></h2>
           <p className="text-ink/60 text-xl leading-relaxed font-light mb-16">
-            Your journey with LuxeBed doesn't end at purchase. Our white-glove concierge service ensures every aspect of your experience is seamless, from the first consultation to the final installation and beyond.
+            Your journey with Custom Beds doesn't end at purchase. Our white-glove concierge service ensures every aspect of your experience is seamless, from the first consultation to the final installation and beyond.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

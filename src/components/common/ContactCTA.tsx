@@ -36,7 +36,7 @@ const ContactCTA = () => {
                     <span className="text-[10px] uppercase tracking-[0.2em] font-bold">WhatsApp</span>
                   </a>
                   <a 
-                    href="https://facebook.com/luxebed" 
+                    href="https://facebook.com/custombeds" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-ink hover:text-gold transition-colors duration-300"
@@ -54,7 +54,7 @@ const ContactCTA = () => {
                 <h4 className="font-serif text-xl mb-2">Visit Showroom</h4>
                 <p className="text-xs text-ink/40 uppercase tracking-widest font-bold">Mayfair, London</p>
               </Link>
-              <a href="mailto:concierge@luxebed.com" className="group p-8 bg-white border border-ink/5 hover:border-gold/30 transition-all duration-500">
+              <a href="mailto:concierge@custombeds.com" className="group p-8 bg-white border border-ink/5 hover:border-gold/30 transition-all duration-500">
                 <Mail className="text-gold mb-6 group-hover:scale-110 transition-transform" size={24} />
                 <h4 className="font-serif text-xl mb-2">Email Concierge</h4>
                 <p className="text-xs text-ink/40 uppercase tracking-widest font-bold">Response within 24h</p>

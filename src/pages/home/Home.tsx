@@ -5,6 +5,7 @@ import { getProducts } from '../../services/productService';
 import { motion } from 'motion/react';
 import { ArrowRight, Ruler, Hammer, Truck, Star, MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/common/SEO';
 
 const Home = () => {
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
@@ -26,6 +27,7 @@ const Home = () => {
 
   return (
     <div className="space-y-32 pb-20 overflow-hidden">
+      <SEO />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -75,7 +77,7 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-5xl md:text-7xl font-serif mb-12 leading-tight italic">"A bed is not just a piece of furniture; it is a sanctuary where dreams are born."</h2>
-          <p className="text-xs uppercase tracking-[0.4em] font-bold text-gold">The LuxeBed Philosophy</p>
+          <p className="text-xs uppercase tracking-[0.4em] font-bold text-gold">The Custom Beds Philosophy</p>
         </motion.div>
       </section>
 
@@ -268,8 +270,8 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {[
-            { name: "Eleanor Vance", role: "Interior Designer", text: "LuxeBed is my go-to for every high-end residential project. Their attention to detail and custom capabilities are simply unmatched in the industry." },
-            { name: "Julian Thorne", role: "Hotelier", text: "We switched our entire boutique hotel to LuxeBed mattresses. Our guest satisfaction scores for sleep quality have never been higher." },
+            { name: "Eleanor Vance", role: "Interior Designer", text: "Custom Beds is my go-to for every high-end residential project. Their attention to detail and custom capabilities are simply unmatched in the industry." },
+            { name: "Julian Thorne", role: "Hotelier", text: "We switched our entire boutique hotel to Custom Beds mattresses. Our guest satisfaction scores for sleep quality have never been higher." },
             { name: "Sophia Chen", role: "Private Client", text: "The bespoke process was a dream. I finally have a bed that fits my height and my style perfectly. It's the best investment I've ever made." }
           ].map((t, i) => (
             <div key={i} className="bg-white p-10 border border-ink/5 shadow-sm space-y-6">
@@ -303,7 +305,7 @@ const Home = () => {
               </div>
               <div className="flex items-center space-x-4">
                 <Mail size={18} className="text-gold" />
-                <span className="text-sm text-paper/80">atelier@luxebed.com</span>
+                <span className="text-sm text-paper/80">atelier@custombeds.com</span>
               </div>
             </div>
           </div>

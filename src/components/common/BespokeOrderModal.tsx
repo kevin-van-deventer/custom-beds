@@ -41,7 +41,7 @@ Notes: ${formData.notes}`;
   const handleEmail = () => {
     const subject = encodeURIComponent(`Bespoke Bed Inquiry - ${formData.name}`);
     const body = encodeURIComponent(constructMessage());
-    window.location.href = `mailto:concierge@luxebed.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:concierge@custombeds.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -87,7 +87,7 @@ Notes: ${formData.notes}`;
                 </div>
               </div>
               <div className="pt-12 border-t border-white/10">
-                <p className="text-[9px] uppercase tracking-[0.2em] font-bold text-white/30">LuxeBed Atelier London</p>
+                <p className="text-[9px] uppercase tracking-[0.2em] font-bold text-white/30">Custom Beds Atelier London</p>
               </div>
             </div>
 

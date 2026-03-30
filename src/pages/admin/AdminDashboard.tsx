@@ -115,7 +115,7 @@ const AdminDashboard = () => {
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
         <div>
           <h1 className="text-4xl font-serif mb-2">Management Console</h1>
-          <p className="text-xs uppercase tracking-widest text-ink/40">LuxeBed Operational Dashboard</p>
+          <p className="text-xs uppercase tracking-widest text-ink/40">Custom Beds Operational Dashboard</p>
         </div>
         <div className="flex bg-ink/5 p-1 rounded-lg">
           <button

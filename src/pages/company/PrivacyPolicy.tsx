@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-xl font-bold uppercase tracking-widest text-ink mb-4">1. Introduction</h2>
             <p>
-              At LuxeBed, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website and use our services.
+              At Custom Beds, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website and use our services.
             </p>
           </section>
 
@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-xl font-bold uppercase tracking-widest text-ink mb-4">7. Contact Us</h2>
             <p>
-              If you have any questions about this Privacy Policy, please contact us at privacy@luxebed.com.
+              If you have any questions about this Privacy Policy, please contact us at privacy@custombeds.com.
             </p>
           </section>
         </div>

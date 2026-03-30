@@ -5,7 +5,7 @@ const Footer = () => (
   <footer className="bg-ink text-paper py-20 mt-20">
     <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
       <div>
-        <h3 className="text-2xl font-serif mb-6 italic">LuxeBed</h3>
+        <h3 className="text-2xl font-serif mb-6 italic">Custom Beds</h3>
         <p className="text-paper/60 text-sm leading-relaxed">
           Crafting the finest custom sleep experiences since 1998. Every bed is a masterpiece of comfort and design.
         </p>
@@ -39,7 +39,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="max-w-7xl mx-auto px-4 mt-20 pt-8 border-t border-white/10 text-center text-xs text-paper/40">
-      &copy; {new Date().getFullYear()} LuxeBed Custom Bedding. All rights reserved.
+      &copy; {new Date().getFullYear()} Custom Beds. All rights reserved.
     </div>
   </footer>
 );

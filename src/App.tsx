@@ -2,9 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ContactCTA from './components/common/ContactCTA';
+import SEO from './components/common/SEO';
 
 // Lazy load pages
 const Home = React.lazy(() => import('./pages/home/Home'));
@@ -24,6 +26,7 @@ function AppContent() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO />
       <Navbar />
       <main className="flex-grow pt-20">
         <React.Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
@@ -49,12 +52,14 @@ function AppContent() {
 
 export default function App() {
   return (
-    <AuthProvider>
-      <CartProvider>
-        <Router>
-          <AppContent />
-        </Router>
-      </CartProvider>
-    </AuthProvider>
+    <HelmetProvider>
+      <AuthProvider>
+        <CartProvider>
+          <Router>
+            <AppContent />
+          </Router>
+        </CartProvider>
+      </AuthProvider>
+    </HelmetProvider>
   );
 }
