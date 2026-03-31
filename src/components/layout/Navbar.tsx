@@ -28,6 +28,8 @@ const Navbar = () => {
               alt="Custom Beds Logo" 
               className="w-10 h-10 transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
             />
             <span className="text-2xl font-serif tracking-widest uppercase italic">Custom Beds</span>
           </Link>

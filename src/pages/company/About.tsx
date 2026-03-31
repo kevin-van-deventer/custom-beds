@@ -14,6 +14,9 @@ const About = () => {
             alt="Custom Beds Craftsmanship"
             className="w-full h-full object-cover opacity-40 brightness-[0.6]"
             referrerPolicy="no-referrer"
+            loading="lazy"
+            decoding="async"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-transparent to-ink/80"></div>
         </div>
@@ -82,6 +85,8 @@ const About = () => {
                 alt="Master Artisan at Work"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="absolute -bottom-12 -left-12 bg-white p-10 shadow-xl hidden md:block max-w-xs border border-ink/5">
@@ -173,6 +178,8 @@ const About = () => {
               alt="Sustainable Forest"
               className="w-full h-full object-cover opacity-80"
               referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -215,6 +222,8 @@ const About = () => {
                 alt="Julian Thorne - Founder"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             {/* Custom Design Component: Floating Quote Card */}
@@ -248,14 +257,14 @@ const About = () => {
             <div className="grid grid-cols-2 gap-8 pt-10">
               <div className="space-y-2">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gold/20">
-                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=100" alt="Team" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=100" alt="Team" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
                 </div>
                 <p className="text-sm font-serif">Elena Rossi</p>
                 <p className="text-[9px] uppercase tracking-widest text-ink/40 font-bold">Lead Textile Designer</p>
               </div>
               <div className="space-y-2">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gold/20">
-                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100" alt="Team" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100" alt="Team" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
                 </div>
                 <p className="text-sm font-serif">Marcus Chen</p>
                 <p className="text-[9px] uppercase tracking-widest text-ink/40 font-bold">Master Upholsterer</p>

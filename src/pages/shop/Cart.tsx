@@ -87,6 +87,8 @@ const Cart = () => {
                     alt={item.name}
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex-grow">

@@ -1,18 +1,60 @@
-import React, { useState } from 'react';
-import { motion } from 'motion/react';
-import { MessageSquare, PenTool, Hammer, Truck, Sparkles, Ruler, Palette, ShieldCheck, ArrowRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { MessageSquare, PenTool, Hammer, Truck, Sparkles, Ruler, Palette, ShieldCheck, ArrowRight, Loader2 } from 'lucide-react';
 import BespokeOrderModal from '../../components/common/BespokeOrderModal';
 import SEO from '../../components/common/SEO';
+import { GoogleGenAI } from "@google/genai";
 
 const CustomBeds = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
+  const [isGenerating, setIsGenerating] = useState(false);
+
+  useEffect(() => {
+    const generateBespokeImage = async () => {
+      setIsGenerating(true);
+      try {
+        const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+        const response = await ai.models.generateContent({
+          model: 'gemini-2.5-flash-image',
+          contents: {
+            parts: [
+              {
+                text: 'A high-end, luxury bedroom sanctuary being meticulously set up by a professional white-glove delivery team. The room is elegant with soft lighting, premium materials, and a bespoke custom bed as the centerpiece. The atmosphere is sophisticated and serene, matching a luxury London atelier brand aesthetic.',
+              },
+            ],
+          },
+          config: {
+            imageConfig: {
+              aspectRatio: "16:9",
+            },
+          },
+        });
+
+        for (const part of response.candidates[0].content.parts) {
+          if (part.inlineData) {
+            const base64EncodeString = part.inlineData.data;
+            setGeneratedImage(`data:image/png;base64,${base64EncodeString}`);
+            break;
+          }
+        }
+      } catch (error) {
+        console.error("Failed to generate image:", error);
+      } finally {
+        setIsGenerating(false);
+      }
+    };
+
+    generateBespokeImage();
+  }, []);
+
   const steps = [
     {
       icon: <MessageSquare size={32} />,
       title: "The Discovery",
       subtitle: "Step 01",
       description: "Your journey begins with a private consultation. We listen to your sleep habits, aesthetic preferences, and spatial requirements to define the blueprint of your rest.",
-      image: "/images/step_1_custom_bed_design.png",
+      image: "/images/step_1_custom_bed_design.jpeg",
       accent: "bg-gold/10"
     },
     {
@@ -36,7 +78,7 @@ const CustomBeds = () => {
       title: "The Reveal",
       subtitle: "Step 04",
       description: "Our white-glove delivery team ensures a seamless installation. We don't just deliver a bed; we transform your bedroom into a bespoke sanctuary.",
-      image: "https://images.unsplash.com/photo-1505693419173-42b925886275?auto=format&fit=crop&q=80&w=1200",
+      image: generatedImage || "https://images.unsplash.com/photo-1505693419173-42b925886275?auto=format&fit=crop&q=80&w=1200",
       accent: "bg-ink/5"
     }
   ];
@@ -57,6 +99,9 @@ const CustomBeds = () => {
             alt="Bespoke Bed Craftsmanship" 
             className="w-full h-full object-cover scale-105"
             referrerPolicy="no-referrer"
+            loading="lazy"
+            decoding="async"
+            fetchPriority="high"
           />
           
           {/* Technical Grid Overlay - Custom Design Feeling */}
@@ -107,13 +152,34 @@ const CustomBeds = () => {
                 transition={{ duration: 0.8 }}
                 className={`lg:col-span-7 relative ${index % 2 !== 0 ? 'lg:order-2' : ''}`}
               >
-                <div className="aspect-[16/10] overflow-hidden rounded-[2rem] shadow-2xl">
-                  <img 
-                    src={step.image} 
-                    alt={step.title} 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
-                    referrerPolicy="no-referrer"
-                  />
+                <div className="aspect-[16/10] overflow-hidden rounded-[2rem] shadow-2xl relative bg-ink/5">
+                  <AnimatePresence mode="wait">
+                    {isGenerating && !generatedImage ? (
+                      <motion.div
+                        key="loader"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="absolute inset-0 flex flex-col items-center justify-center space-y-4 bg-white/40 backdrop-blur-sm"
+                      >
+                        <Loader2 className="animate-spin text-gold" size={48} />
+                        <p className="text-[10px] uppercase tracking-[0.4em] text-gold font-bold">Generating Bespoke Sanctuary...</p>
+                      </motion.div>
+                    ) : (
+                      <motion.img 
+                        key={step.image}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        src={step.image} 
+                        alt={step.title} 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
+                        referrerPolicy="no-referrer"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                  </AnimatePresence>
                 </div>
                 {/* Decorative Element */}
                 <div className={`absolute -z-10 w-full h-full ${step.accent} rounded-[2rem] -top-8 ${index % 2 === 0 ? '-left-8' : '-right-8'}`}></div>
@@ -170,7 +236,7 @@ const CustomBeds = () => {
                 className="group cursor-pointer"
               >
                 <div className="aspect-square overflow-hidden rounded-full mb-6 border-2 border-white/10 group-hover:border-gold transition-colors duration-500">
-                  <img src={material.img} alt={material.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
+                  <img src={material.img} alt={material.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
                 </div>
                 <div className="text-center">
                   <p className="text-white font-serif text-lg">{material.name}</p>
@@ -209,7 +275,7 @@ const CustomBeds = () => {
           </div>
           <div className="lg:col-span-2 grid grid-cols-2 gap-4">
             <div className="aspect-square bg-ink/5 rounded-3xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" alt="Detail" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" alt="Detail" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
             </div>
             <div className="aspect-square bg-gold/10 rounded-3xl flex items-center justify-center p-12 text-center">
               <div>
@@ -218,7 +284,7 @@ const CustomBeds = () => {
               </div>
             </div>
             <div className="col-span-2 h-64 bg-ink rounded-3xl overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=1200" alt="Workshop" className="w-full h-full object-cover opacity-50" referrerPolicy="no-referrer" />
+              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=1200" alt="Workshop" className="w-full h-full object-cover opacity-50" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <p className="text-white text-xs uppercase tracking-[0.5em] font-bold">Handcrafted in London</p>
               </div>

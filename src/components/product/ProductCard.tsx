@@ -18,10 +18,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <Link to={`/product/${product.id}`} className="block overflow-hidden bg-white">
         <div className="aspect-[3/4] overflow-hidden relative">
           <img
-            src={product.images[0] || `/images/premium_covers_for_bases.png`}
+            src={product.images[0] || `/images/premium_covers_for_bases.jpeg`}
             alt={product.name}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             referrerPolicy="no-referrer"
+            loading="lazy"
+            decoding="async"
           />
           {product.stock <= 5 && product.stock > 0 && (
             <span className="absolute top-4 left-4 bg-gold text-white text-[10px] uppercase tracking-widest px-2 py-1">

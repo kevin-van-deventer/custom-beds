@@ -14,6 +14,9 @@ const Experience = () => {
             alt="Luxury Bedroom"
             className="w-full h-full object-cover brightness-[0.7]"
             referrerPolicy="no-referrer"
+            loading="lazy"
+            decoding="async"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/20 via-transparent to-paper/20"></div>
         </div>
@@ -78,6 +81,8 @@ const Experience = () => {
                 alt="Craftsmanship" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="absolute -bottom-12 -right-12 bg-ink text-paper p-12 hidden md:block max-w-xs shadow-2xl">
@@ -148,10 +153,10 @@ const Experience = () => {
             <div className="order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-8">
                 <div className="aspect-square overflow-hidden rounded-full border border-ink/5">
-                  <img src="/images/custom_beds_for_all_room_setups.png" alt="Material 1" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img src="/images/custom_beds_for_all_room_setups.png" alt="Material 1" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
                 </div>
                 <div className="aspect-square overflow-hidden rounded-full border border-ink/5 mt-12">
-                  <img src="/images/premium_covers_for_bases.png" alt="Material 2" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img src="/images/premium_covers_for_bases.jpeg" alt="Material 2" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
                 </div>
               </div>
             </div>
@@ -219,7 +224,7 @@ const Experience = () => {
       {/* Final CTA */}
       <section className="py-40 text-center relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">
-          <img src="/images/premium_covers_for_bases.png" alt="Background" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src="/images/premium_covers_for_bases.jpeg" alt="Background" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-4">
           <h2 className="text-5xl md:text-8xl font-serif mb-12">Ready to <br /> <span className="italic">Transform</span> Your Sleep?</h2>

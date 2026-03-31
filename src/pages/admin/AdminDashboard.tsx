@@ -190,7 +190,7 @@ const AdminDashboard = () => {
                     <td className="px-6 py-4">
                       <div className="flex items-center space-x-4">
                         <div className="w-10 h-10 bg-ink/5 rounded overflow-hidden">
-                          <img src={product.images[0] || `https://picsum.photos/seed/${product.id}/100/100`} alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                          <img src={product.images[0] || `https://picsum.photos/seed/${product.id}/100/100`} alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
                         </div>
                         <span className="font-medium text-sm">{product.name}</span>
                       </div>
@@ -389,6 +389,8 @@ const AdminDashboard = () => {
                               alt={`Product ${index + 1}`}
                               className="w-full h-full object-cover rounded border border-ink/5"
                               referrerPolicy="no-referrer"
+                              loading="lazy"
+                              decoding="async"
                             />
                             <button
                               type="button"

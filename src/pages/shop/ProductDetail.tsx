@@ -59,6 +59,9 @@ const ProductDetail = () => {
               alt={product.name}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
+              fetchPriority="high"
             />
           </motion.div>
           <div className="grid grid-cols-4 gap-4">
@@ -73,6 +76,8 @@ const ProductDetail = () => {
                   alt={`${product.name} thumbnail ${idx}`}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
                 />
               </button>
             ))}
