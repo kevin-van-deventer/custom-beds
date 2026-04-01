@@ -43,6 +43,12 @@ To host this application on [Vercel](https://vercel.com/), follow these steps:
     -   Add `GEMINI_API_KEY` to your Vercel project environment variables to enable AI-powered custom bed visualizations.
     -   If you're using other secrets (like Stripe or SendGrid), add them as well.
 
+### Client-Side Routing (vercel.json)
+
+Since this is a Single Page Application (SPA) using `react-router-dom`, we've included a `vercel.json` file in the root directory. This file contains a "rewrite" rule that tells Vercel's server to redirect all requests to `index.html`. 
+
+Without this, navigating directly to a sub-route (like `/cart` or `/about`) or refreshing the page on those routes would result in a **404 NOT_FOUND** error, as the server would look for a physical file at those paths instead of letting React handle the routing.
+
 ### Connecting Firebase Database
 
 The application is configured to connect to Firebase using the `firebase-applet-config.json` file located in the root directory.
