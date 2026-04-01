@@ -29,9 +29,27 @@ Custom Beds is a premium, modern web application designed for a custom bed compa
 
 ## 🌐 Hosting & Deployment
 
-- **Platform**: [Google Cloud Run](https://cloud.google.com/run)
-- **Environment**: Containerized deployment via AI Studio Build.
-- **Port**: Standardized on port 3000.
+### Vercel Deployment
+
+To host this application on [Vercel](https://vercel.com/), follow these steps:
+
+1.  **Connect GitHub**: Push your code to a GitHub repository and connect it to Vercel.
+2.  **Project Settings**:
+    -   **Framework Preset**: Select `Vite`.
+    -   **Root Directory**: `./` (default).
+    -   **Build Command**: `npm run build`.
+    -   **Output Directory**: `dist`.
+3.  **Environment Variables**:
+    -   Add `GEMINI_API_KEY` to your Vercel project environment variables to enable AI-powered custom bed visualizations.
+    -   If you're using other secrets (like Stripe or SendGrid), add them as well.
+
+### Connecting Firebase Database
+
+The application is configured to connect to Firebase using the `firebase-applet-config.json` file located in the root directory.
+
+1.  **Ensure Config File is Present**: Make sure `firebase-applet-config.json` is committed to your repository. This file contains the necessary credentials for Firebase Auth and Firestore.
+2.  **Firestore Security Rules**: Before going live, ensure you deploy your `firestore.rules` to your Firebase project to protect your data.
+3.  **Authentication**: Ensure your Vercel deployment URL is added to the **Authorized Domains** list in the Firebase Console under **Authentication > Settings**.
 
 ## 🔍 SEO & Meta Data
 
