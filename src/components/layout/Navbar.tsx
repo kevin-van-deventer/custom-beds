@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between h-20 items-center">
           <Link to="/" className="flex items-center space-x-3 group">
             <img 
-              src="/images/Custom_Beds_SVG_logo.png" 
+              src="/images/CustomBedsSVGlogo.png" 
               alt="Custom Beds Logo" 
               className="w-10 h-10 transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"

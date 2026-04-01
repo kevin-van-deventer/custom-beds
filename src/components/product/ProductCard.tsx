@@ -18,7 +18,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <Link to={`/product/${product.id}`} className="block overflow-hidden bg-white">
         <div className="aspect-[3/4] overflow-hidden relative">
           <img
-            src={product.images[0] || `/images/premium_covers_for_bases.jpeg`}
+            src={product.images[0] || `/images/premiumcoversforbases.jpeg`}
             alt={product.name}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             referrerPolicy="no-referrer"

@@ -32,7 +32,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/header_img_homepage_bedroom_setup.png"
+            src="/images/headerimghomepagebedroomsetup.jpg"
             alt="Luxury Bedroom Setup"
             className="w-full h-full object-cover brightness-[0.75]"
             referrerPolicy="no-referrer"
@@ -88,7 +88,7 @@ const Home = () => {
       <section className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Link to="/category/mattresses" className="group relative h-[600px] overflow-hidden">
-            <img src="/images/mattress_display_image_homepage.png" alt="Mattresses" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+            <img src="/images/mattressdisplayimagehomepage.jpg" alt="Mattresses" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
             <div className="absolute inset-0 bg-ink/20 group-hover:bg-ink/40 transition-colors"></div>
             <div className="absolute bottom-12 left-12 text-white">
               <h2 className="text-5xl font-serif mb-4 italic">Mattresses</h2>
@@ -101,7 +101,7 @@ const Home = () => {
           </Link>
           <div className="grid grid-rows-2 gap-8">
             <Link to="/category/headboards" className="group relative overflow-hidden">
-              <img src="/images/headboard_display_image_homepage.png" alt="Headboards" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+              <img src="/images/headboarddisplayimagehomepage.png" alt="Headboards" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-ink/20 group-hover:bg-ink/40 transition-colors"></div>
               <div className="absolute bottom-8 left-8 text-white">
                 <h2 className="text-4xl font-serif mb-2 italic">Headboards</h2>
@@ -112,7 +112,7 @@ const Home = () => {
               </div>
             </Link>
             <Link to="/category/bases" className="group relative overflow-hidden">
-              <img src="/images/bases_display_image_homepage.png" alt="Bases" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+              <img src="/images/basesdisplayimagehomepage.png" alt="Bases" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-ink/20 group-hover:bg-ink/40 transition-colors"></div>
               <div className="absolute bottom-8 left-8 text-white">
                 <h2 className="text-4xl font-serif mb-2 italic">Bases</h2>
@@ -198,7 +198,7 @@ const Home = () => {
       <section className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative">
-            <img src="/images/custom_beds_for_all_room_setups.png" alt="Materials" className="w-full aspect-square object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+            <img src="/images/custombedsforallroomsetups.png" alt="Materials" className="w-full aspect-square object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
             <div className="absolute -bottom-10 -right-10 bg-white p-12 shadow-2xl hidden md:block max-w-xs">
               <p className="text-[10px] uppercase tracking-widest font-bold text-gold mb-4">Pure Distinction</p>
               <h3 className="text-2xl font-serif mb-4">Sustainably Sourced</h3>
@@ -253,13 +253,13 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group overflow-hidden">
-              <img src="/images/premium_protectors_for_bases.jpeg" alt="Cover 1" className="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+              <img src="/images/premiumprotectorsforbases.jpeg" alt="Cover 1" className="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
             </div>
             <div className="group overflow-hidden mt-12">
-              <img src="/images/custom_beds_for_all_room_setups.png" alt="Cover 2" className="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+              <img src="/images/custombedsforallroomsetups.png" alt="Cover 2" className="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
             </div>
             <div className="group overflow-hidden">
-              <img src="/images/premium_covers_for_bases.jpeg" alt="Cover 3" className="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+              <img src="/images/premiumcoversforbases.jpeg" alt="Cover 3" className="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -313,7 +313,7 @@ const Home = () => {
             </div>
           </div>
           <div className="h-[400px] bg-white/5 overflow-hidden">
-            <img src="/images/visit_our_factory_premises.png" alt="Atelier" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+            <img src="/images/visitourfactorypremises.png" alt="Atelier" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>

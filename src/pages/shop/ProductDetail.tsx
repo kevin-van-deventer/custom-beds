@@ -55,7 +55,7 @@ const ProductDetail = () => {
             className="aspect-[4/5] overflow-hidden bg-white"
           >
             <img
-              src={product.images[activeImage] || `/images/headboard_display_image_homepage.png`}
+              src={product.images[activeImage] || `/images/headboarddisplayimagehomepage.png`}
               alt={product.name}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -72,7 +72,7 @@ const ProductDetail = () => {
                 className={`aspect-square overflow-hidden border-2 transition-colors ${activeImage === idx ? 'border-gold' : 'border-transparent'}`}
               >
                 <img
-                  src={typeof img === 'string' ? img : "/images/bases_display_image_homepage.png"}
+                  src={typeof img === 'string' ? img : "/images/basesdisplayimagehomepage.png"}
                   alt={`${product.name} thumbnail ${idx}`}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

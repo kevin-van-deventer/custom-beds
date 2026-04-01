@@ -83,7 +83,7 @@ const Cart = () => {
               >
                 <div className="w-32 h-40 bg-ink/5 overflow-hidden">
                   <img
-                    src="/images/mattress_display_image_homepage.png"
+                    src="/images/mattressdisplayimagehomepage.jpg"
                     alt={item.name}
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

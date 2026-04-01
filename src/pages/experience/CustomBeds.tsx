@@ -54,7 +54,7 @@ const CustomBeds = () => {
       title: "The Discovery",
       subtitle: "Step 01",
       description: "Your journey begins with a private consultation. We listen to your sleep habits, aesthetic preferences, and spatial requirements to define the blueprint of your rest.",
-      image: "/images/step_1_custom_bed_design.jpeg",
+      image: "/images/step1custombeddesign.jpeg",
       accent: "bg-gold/10"
     },
     {

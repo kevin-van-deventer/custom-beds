@@ -10,7 +10,7 @@ const About = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-ink">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/custom_beds_for_all_room_setups.png"
+            src="/images/custombedsforallroomsetups.png"
             alt="Custom Beds Craftsmanship"
             className="w-full h-full object-cover opacity-40 brightness-[0.6]"
             referrerPolicy="no-referrer"

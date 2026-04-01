@@ -15,7 +15,7 @@ const SEO: React.FC<SEOProps> = ({
   description = "Exquisite custom sleep solutions. Bespoke mattresses, headboards, and bases handcrafted in London for the ultimate sanctuary.",
   canonical = "https://ais-pre-wur55bydyivnzlcfihylb7-161884020965.asia-southeast1.run.app/",
   ogType = "website",
-  ogImage = "https://ais-pre-wur55bydyivnzlcfihylb7-161884020965.asia-southeast1.run.app/images/header_img_homepage_bedroom_setup.png",
+  ogImage = "https://ais-pre-wur55bydyivnzlcfihylb7-161884020965.asia-southeast1.run.app/images/headerimghomepagebedroomsetup.jpg",
   jsonLd
 }) => {
   const siteTitle = title.includes("Custom Beds") ? title : `${title} | Custom Beds`;
