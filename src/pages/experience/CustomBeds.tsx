@@ -62,7 +62,7 @@ const CustomBeds = () => {
       title: "The Showroom at Home",
       subtitle: "Step 02",
       description: "We bring the showroom to you. Book an appointment with our expert team and experience the true quality of our materials and luxury finishes in the comfort of your home.",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1200",
+      image: "/images/deliveryandinstallation.png",
       accent: "bg-ink/5"
     },
     {
@@ -70,7 +70,7 @@ const CustomBeds = () => {
       title: "Master Crafting",
       subtitle: "Step 03",
       description: "Our highly valued manufacturing team, with over 10 years of experience in carpentry and upholstery, hand-crafts your bed to your exact specifications.",
-      image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=80&w=1200",
+      image: "/images/mastercrafting.jpeg",
       accent: "bg-gold/10"
     },
     {
@@ -78,14 +78,14 @@ const CustomBeds = () => {
       title: "Delivery & Installation",
       subtitle: "Step 04",
       description: "Your bespoke bed is delivered and professionally installed at your requested location, ensuring every detail is perfect before we consider the job done.",
-      image: generatedImage || "https://images.unsplash.com/photo-1505693419173-42b925886275?auto=format&fit=crop&q=80&w=1200",
+      image: "/images/deliveryinstallation.jpeg",
       accent: "bg-ink/5"
     }
   ];
 
   return (
     <div className="bg-paper min-h-screen overflow-hidden">
-      <SEO 
+      <SEO
         title="Bespoke Sanctuaries | Custom Bed Design Journey"
         description="Experience the Custom Beds Atelier. From initial discovery to master craftsmanship, co-create your perfect sleep sanctuary with our bespoke design journey."
         canonical="https://ais-pre-wur55bydyivnzlcfihylb7-161884020965.asia-southeast1.run.app/custom-beds"
@@ -94,16 +94,16 @@ const CustomBeds = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=1920" 
-            alt="Bespoke Bed Craftsmanship" 
+          <img
+            src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=1920"
+            alt="Bespoke Bed Craftsmanship"
             className="w-full h-full object-cover scale-105"
             referrerPolicy="no-referrer"
             loading="lazy"
             decoding="async"
             fetchPriority="high"
           />
-          
+
           {/* Technical Grid Overlay - Custom Design Feeling */}
           <div className="absolute inset-0 opacity-20 pointer-events-none">
             <div className="w-full h-full" style={{ backgroundImage: 'radial-gradient(circle, #141414 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
@@ -127,7 +127,7 @@ const CustomBeds = () => {
             <div className="relative w-full py-16 mt-12">
               {/* Full-width Banner */}
               <div className="absolute inset-0 bg-white/40 backdrop-blur-sm"></div>
-              
+
               <div className="relative z-10 max-w-5xl mx-auto px-4 flex flex-col items-center justify-center gap-8">
                 <p className="text-ink text-lg max-w-2xl leading-relaxed text-center font-medium">
                   The journey to perfect sleep is personal. We co-create a sanctuary that reflects your unique style and provides the ultimate foundation for your well-being.
@@ -143,9 +143,9 @@ const CustomBeds = () => {
         {steps.map((step, index) => (
           <section key={index} className="relative mb-20 md:mb-32 last:mb-0">
             <div className={`max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-              
+
               {/* Image Side */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -166,13 +166,13 @@ const CustomBeds = () => {
                         <p className="text-[10px] uppercase tracking-[0.4em] text-gold font-bold">Generating Bespoke Sanctuary...</p>
                       </motion.div>
                     ) : (
-                      <motion.img 
+                      <motion.img
                         key={step.image}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
-                        src={step.image} 
-                        alt={step.title} 
+                        src={step.image}
+                        alt={step.title}
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                         referrerPolicy="no-referrer"
                         loading="lazy"
@@ -186,7 +186,7 @@ const CustomBeds = () => {
               </motion.div>
 
               {/* Content Side */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -227,7 +227,7 @@ const CustomBeds = () => {
               { name: "British Wool", type: "Organic", img: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&q=80&w=400" },
               { name: "Silk Blend", type: "Premium", img: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&q=80&w=400" }
             ].map((material, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

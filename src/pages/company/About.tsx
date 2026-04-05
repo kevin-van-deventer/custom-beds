@@ -20,7 +20,7 @@ const About = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-transparent to-ink/80"></div>
         </div>
-        
+
         <div className="relative z-10 text-center px-4 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -71,7 +71,7 @@ const About = () => {
               </Link>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -79,11 +79,11 @@ const About = () => {
             transition={{ duration: 1 }}
             className="relative"
           >
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
+            <div className="aspect-[3/5] overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
+                src="/images/Schalk_Swanepoel_and_Johan_Redelinghuys.png"
                 alt="Master Artisan at Work"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fit"
                 referrerPolicy="no-referrer"
                 loading="lazy"
                 decoding="async"
@@ -104,7 +104,7 @@ const About = () => {
             <p className="text-gold text-xs uppercase tracking-[0.4em] mb-4 font-bold">The Custom Beds Standard</p>
             <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif italic">Uncompromising Detail</h2>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -207,15 +207,15 @@ const About = () => {
       {/* Meet the Visionaries - Owner & Team Section */}
       <section className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center mb-32">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
+            <div className="aspect-[3/5] overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
+                src="/images/Schalk_Swanepoel_and_Johan_Redelinghuys.png"
                 alt="Directors - Custom Bed Direct"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                 referrerPolicy="no-referrer"
@@ -249,7 +249,7 @@ const About = () => {
                 Complementing this, <strong>Schalk Swanepoel</strong>, previous owner of the Built-In-Cupboard Company, oversaw the design and installation of 1500 units annually. Their joint experience ensures that every bed is a masterpiece of both design and engineering.
               </p>
             </div>
-            
+
             {/* Custom Design Component: Team Grid */}
             <div className="grid grid-cols-2 gap-8 pt-10">
               <div className="space-y-2">
@@ -271,7 +271,7 @@ const About = () => {
         </div>
 
         {/* Custom Design Component: Signature Banner */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
