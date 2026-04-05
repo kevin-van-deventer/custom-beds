@@ -7,6 +7,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ContactCTA from './components/common/ContactCTA';
 import SEO from './components/common/SEO';
+import ScrollToTop from './components/common/ScrollToTop';
 
 // Lazy load pages
 const Home = React.lazy(() => import('./pages/home/Home'));
@@ -56,6 +57,7 @@ export default function App() {
       <AuthProvider>
         <CartProvider>
           <Router>
+            <ScrollToTop />
             <AppContent />
           </Router>
         </CartProvider>

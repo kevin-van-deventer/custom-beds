@@ -17,7 +17,8 @@ const Contact = () => {
     <div className="max-w-7xl mx-auto px-4 py-20">
       <div className="text-center mb-20">
         <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-4 font-bold">Get in Touch</p>
-        <h1 className="text-5xl font-serif">Contact Our Atelier</h1>
+        <h1 className="text-5xl font-serif">Reach Our Experts</h1>
+        <p className="mt-6 text-sm uppercase tracking-[0.2em] text-ink/40 font-bold italic">Serving Gauteng & Western Cape • Expanding Nationwide</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
@@ -34,8 +35,9 @@ const Contact = () => {
                 <MapPin className="text-gold" size={20} />
               </div>
               <div>
-                <h4 className="text-xs font-bold uppercase tracking-widest mb-2">Our Flagship Atelier</h4>
-                <p className="text-sm text-ink/60">12 Bruton Street, Mayfair, London, W1J 6QA</p>
+                <h4 className="text-xs font-bold uppercase tracking-widest mb-2">Factory Premises</h4>
+                <p className="text-sm text-ink/60 italic mb-1">Bashewa, South Africa</p>
+                <p className="text-xs text-ink/40 uppercase tracking-widest font-bold">Gauteng Region</p>
               </div>
             </div>
             <div className="flex items-start space-x-6">
@@ -44,7 +46,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="text-xs font-bold uppercase tracking-widest mb-2">Phone</h4>
-                <p className="text-sm text-ink/60">+44 (0) 20 7123 4567</p>
+                <p className="text-sm text-ink/60">012 881 6555</p>
               </div>
             </div>
             <div className="flex items-start space-x-6">
@@ -52,8 +54,8 @@ const Contact = () => {
                 <Mail className="text-gold" size={20} />
               </div>
               <div>
-                <h4 className="text-xs font-bold uppercase tracking-widest mb-2">Email</h4>
-                <p className="text-sm text-ink/60">atelier@custombeds.com</p>
+                <h4 className="text-xs font-bold uppercase tracking-widest mb-2">Direct Inquiry</h4>
+                <p className="text-sm text-ink/60">johan@custombedsdirect.co.za</p>
               </div>
             </div>
           </div>

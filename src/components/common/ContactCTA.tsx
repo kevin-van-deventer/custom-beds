@@ -27,7 +27,7 @@ const ContactCTA = () => {
                 </button>
                 <div className="flex items-center gap-6">
                   <a 
-                    href="https://wa.me/442071234567" 
+                    href="https://wa.me/27128816555" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-ink hover:text-gold transition-colors duration-300"
@@ -51,12 +51,12 @@ const ContactCTA = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <Link to="/contact" className="group p-8 bg-white border border-ink/5 hover:border-gold/30 transition-all duration-500">
                 <MapPin className="text-gold mb-6 group-hover:scale-110 transition-transform" size={24} />
-                <h4 className="font-serif text-xl mb-2">Visit Showroom</h4>
-                <p className="text-xs text-ink/40 uppercase tracking-widest font-bold">Mayfair, London</p>
+                <h4 className="font-serif text-xl mb-2">Visit Factory</h4>
+                <p className="text-xs text-ink/40 uppercase tracking-widest font-bold">Bashewa, South Africa</p>
               </Link>
-              <a href="mailto:concierge@custombeds.com" className="group p-8 bg-white border border-ink/5 hover:border-gold/30 transition-all duration-500">
+              <a href="mailto:johan@custombedsdirect.co.za" className="group p-8 bg-white border border-ink/5 hover:border-gold/30 transition-all duration-500">
                 <Mail className="text-gold mb-6 group-hover:scale-110 transition-transform" size={24} />
-                <h4 className="font-serif text-xl mb-2">Email Concierge</h4>
+                <h4 className="font-serif text-xl mb-2">Email Johan</h4>
                 <p className="text-xs text-ink/40 uppercase tracking-widest font-bold">Response within 24h</p>
               </a>
             </div>

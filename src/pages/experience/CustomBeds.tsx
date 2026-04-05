@@ -51,33 +51,33 @@ const CustomBeds = () => {
   const steps = [
     {
       icon: <MessageSquare size={32} />,
-      title: "The Discovery",
+      title: "The Inquiry",
       subtitle: "Step 01",
-      description: "Your journey begins with a private consultation. We listen to your sleep habits, aesthetic preferences, and spatial requirements to define the blueprint of your rest.",
+      description: "Discover your specific requirements on our platform or contact us for expert advice. We begin by understanding your unique sleep needs and aesthetic preferences.",
       image: "/images/step1custombeddesign.jpeg",
       accent: "bg-gold/10"
     },
     {
       icon: <PenTool size={32} />,
-      title: "The Design",
+      title: "The Showroom at Home",
       subtitle: "Step 02",
-      description: "Our designers translate your vision into technical sketches. From headboard height to the specific tension of each spring, every detail is meticulously planned.",
+      description: "We bring the showroom to you. Book an appointment with our expert team and experience the true quality of our materials and luxury finishes in the comfort of your home.",
       image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1200",
       accent: "bg-ink/5"
     },
     {
       icon: <Hammer size={32} />,
-      title: "The Creation",
+      title: "Master Crafting",
       subtitle: "Step 03",
-      description: "In our London atelier, master upholsterers bring the design to life. Using traditional hand-tufting techniques and natural fillings, we craft a masterpiece that lasts a lifetime.",
+      description: "Our highly valued manufacturing team, with over 10 years of experience in carpentry and upholstery, hand-crafts your bed to your exact specifications.",
       image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=80&w=1200",
       accent: "bg-gold/10"
     },
     {
       icon: <Truck size={32} />,
-      title: "The Reveal",
+      title: "Delivery & Installation",
       subtitle: "Step 04",
-      description: "Our white-glove delivery team ensures a seamless installation. We don't just deliver a bed; we transform your bedroom into a bespoke sanctuary.",
+      description: "Your bespoke bed is delivered and professionally installed at your requested location, ensuring every detail is perfect before we consider the job done.",
       image: generatedImage || "https://images.unsplash.com/photo-1505693419173-42b925886275?auto=format&fit=crop&q=80&w=1200",
       accent: "bg-ink/5"
     }

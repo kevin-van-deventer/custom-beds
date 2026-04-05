@@ -27,13 +27,13 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-gold text-xs uppercase tracking-[0.5em] mb-8 font-bold">The Heritage of Custom Beds</p>
+            <p className="text-white text-xs uppercase tracking-[0.5em] mb-8 font-bold">The Heritage of Custom Bed Direct</p>
             <h1 className="text-white text-6xl md:text-9xl font-serif mb-12 leading-[0.9] tracking-tight">
-              Crafting the <br /> <span className="italic">Future of Sleep</span>
+              Bespoke <br /> <span className="italic">Sleep Innovation</span>
             </h1>
             <div className="w-24 h-[1px] bg-gold/50 mx-auto mb-12"></div>
             <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light">
-              Since 1998, we have been redefining the boundaries of comfort, blending traditional craftsmanship with modern innovation.
+              Since 2010, we have been crafting the next generation of comfort, led by masters of manufacturing and operational excellence.
             </p>
           </motion.div>
         </div>
@@ -56,10 +56,10 @@ const About = () => {
             <h2 className="text-5xl md:text-7xl font-serif leading-tight">A Legacy of <br /><span className="italic">Excellence</span></h2>
             <div className="space-y-6 text-ink/70 leading-relaxed text-lg">
               <p>
-                Founded in the heart of London, Custom Beds began as a small atelier dedicated to the pursuit of the perfect night's rest. Our founder, a master upholsterer with a vision, realized that true luxury isn't just about appearance—it's about the profound restoration that only a custom-tailored bed can provide.
+                Founded by Schalk Swanepoel and Johan Redelinghuys, Custom Bed Direct was born from a deep understanding of the bed manufacturing industry and a mission to solve the challenges of shared comfort.
               </p>
               <p>
-                Over two decades later, we remain a family-owned business, committed to the same principles of uncompromising quality and bespoke service that defined our very first creations.
+                Schalk, having refined his techniques in the UK since 2010, discovered the essential need for split comfort mattresses—designs that allow each individual to choose their own firmness within a single, seamless bed.
               </p>
             </div>
             <div className="pt-6">
@@ -90,8 +90,8 @@ const About = () => {
               />
             </div>
             <div className="absolute -bottom-12 -left-12 bg-white p-10 shadow-xl hidden md:block max-w-xs border border-ink/5">
-              <p className="text-4xl font-serif text-gold mb-2 italic">25+</p>
-              <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Years of traditional hand-craftsmanship in London</p>
+              <p className="text-4xl font-serif text-gold mb-2 italic">15yrs</p>
+              <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">of specialized bed manufacturing and split comfort innovation</p>
             </div>
           </motion.div>
         </div>
@@ -166,10 +166,7 @@ const About = () => {
             </div>
             <h2 className="text-4xl md:text-6xl font-serif leading-tight">Kind to the <br /><span className="italic">Environment</span></h2>
             <p className="text-white/60 leading-relaxed text-lg">
-              We believe that a good night's sleep shouldn't come at the cost of the planet. Our wood is sourced from FSC-certified forests, and our natural fillings are ethically harvested and fully biodegradable.
-            </p>
-            <p className="text-white/60 leading-relaxed text-lg">
-              By creating products built to last a lifetime, we actively combat the "fast furniture" culture that fills our landfills.
+              Custom Bed Direct’ mission is to supply a unique quality product, competitive pricing, and excellent customer service. Currently only supplying inland and the Western Cape, our vision is to provide the same high-quality product and customer satisfaction across South Africa.
             </p>
           </div>
           <div className="h-[400px] lg:h-auto overflow-hidden">
@@ -189,20 +186,20 @@ const About = () => {
       <section className="max-w-7xl mx-auto px-4 py-20 border-y border-ink/5">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
           <div>
-            <p className="text-5xl font-serif text-gold mb-2">25+</p>
-            <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Years of Heritage</p>
+            <p className="text-5xl font-serif text-gold mb-2">15yr</p>
+            <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Industrial Mastery</p>
           </div>
           <div>
-            <p className="text-5xl font-serif text-gold mb-2">10k+</p>
-            <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Bespoke Creations</p>
-          </div>
-          <div>
-            <p className="text-5xl font-serif text-gold mb-2">100%</p>
-            <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Natural Fillings</p>
+            <p className="text-5xl font-serif text-gold mb-2">1500+</p>
+            <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Units Per Year</p>
           </div>
           <div>
             <p className="text-5xl font-serif text-gold mb-2">30yr</p>
-            <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Product Guarantee</p>
+            <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Operational Expertise</p>
+          </div>
+          <div>
+            <p className="text-5xl font-serif text-gold mb-2">10yr</p>
+            <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Product Warranty</p>
           </div>
         </div>
       </section>
@@ -219,7 +216,7 @@ const About = () => {
             <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
-                alt="Julian Thorne - Founder"
+                alt="Directors - Custom Bed Direct"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                 referrerPolicy="no-referrer"
                 loading="lazy"
@@ -231,9 +228,9 @@ const About = () => {
               <div className="text-white space-y-4">
                 <div className="w-8 h-8 border-t-2 border-l-2 border-white/30 absolute top-4 left-4"></div>
                 <p className="text-lg font-serif italic leading-relaxed">
-                  "Luxury is not about excess; it's about the perfect alignment of form, function, and feeling."
+                  "Our mission is to supply a unique quality product, competitive pricing, and excellent customer service."
                 </p>
-                <p className="text-[10px] uppercase tracking-widest font-bold opacity-80">— Julian Thorne</p>
+                <p className="text-[10px] uppercase tracking-widest font-bold opacity-80">— The Directors</p>
               </div>
             </div>
           </motion.div>
@@ -241,15 +238,15 @@ const About = () => {
           <div className="space-y-10">
             <div className="inline-flex items-center space-x-4 text-gold">
               <Users size={20} />
-              <span className="text-xs uppercase tracking-[0.3em] font-bold">The Visionaries</span>
+              <span className="text-xs uppercase tracking-[0.3em] font-bold">The Directorship</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-serif leading-tight">Meet the <br /><span className="italic">Masterminds</span></h2>
+            <h2 className="text-5xl md:text-7xl font-serif leading-tight">Mastering <br /><span className="italic">Operations</span></h2>
             <div className="space-y-6 text-ink/70 leading-relaxed text-lg">
               <p>
-                Custom Beds is more than a brand; it's a collective of passionate artisans, designers, and dreamers. Led by our founder Julian Thorne, our team brings together over a century of combined expertise in fine upholstery, textile science, and ergonomic design.
+                <strong>Johan Redelinghuys</strong> brings 30 years of operational and factory management expertise to Custom Bed Direct. Formerly a Product Group Manager for ABB South Africa, Johan was responsible for building world-class manufacturing plants, ensuring our production remains at a global standard.
               </p>
               <p>
-                Every stitch, every layer of natural filling, and every hand-tufted detail is a testament to our shared commitment to excellence. We don't just build beds; we curate the foundation of your well-being.
+                Complementing this, <strong>Schalk Swanepoel</strong>, previous owner of the Built-In-Cupboard Company, oversaw the design and installation of 1500 units annually. Their joint experience ensures that every bed is a masterpiece of both design and engineering.
               </p>
             </div>
             

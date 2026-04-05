@@ -11,9 +11,9 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = "Custom Beds | Bespoke Luxury Bedding & Furniture",
-  description = "Exquisite custom sleep solutions. Bespoke mattresses, headboards, and bases handcrafted in London for the ultimate sanctuary.",
-  canonical = "https://ais-pre-wur55bydyivnzlcfihylb7-161884020965.asia-southeast1.run.app/",
+  title = "Custom Bed Direct | Bespoke Luxury Bedding South Africa",
+  description = "Split comfort innovation for the perfect night's rest. Custom mattresses, headboards, and bases handcrafted in South Africa.",
+  canonical = "https://custombeddirect.co.za/",
   ogType = "website",
   ogImage = "https://ais-pre-wur55bydyivnzlcfihylb7-161884020965.asia-southeast1.run.app/images/headerimghomepagebedroomsetup.jpg",
   jsonLd
@@ -23,14 +23,14 @@ const SEO: React.FC<SEOProps> = ({
   const defaultJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Custom Beds",
+    "name": "Custom Bed Direct",
     "image": ogImage,
     "description": description,
     "url": canonical,
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "London",
-      "addressCountry": "UK"
+      "addressLocality": "Gauteng",
+      "addressCountry": "ZA"
     },
     "priceRange": "$$$"
   };

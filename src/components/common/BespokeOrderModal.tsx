@@ -35,13 +35,13 @@ Notes: ${formData.notes}`;
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(constructMessage());
-    window.open(`https://wa.me/442071234567?text=${message}`, '_blank');
+    window.open(`https://wa.me/27128816555?text=${message}`, '_blank');
   };
 
   const handleEmail = () => {
     const subject = encodeURIComponent(`Bespoke Bed Inquiry - ${formData.name}`);
     const body = encodeURIComponent(constructMessage());
-    window.location.href = `mailto:concierge@custombeds.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:johan@custombedsdirect.co.za?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -87,7 +87,7 @@ Notes: ${formData.notes}`;
                 </div>
               </div>
               <div className="pt-12 border-t border-white/10">
-                <p className="text-[9px] uppercase tracking-[0.2em] font-bold text-white/30">Custom Beds Atelier London</p>
+                <p className="text-[9px] uppercase tracking-[0.2em] font-bold text-white/30">Custom Bed Direct - Bashewa</p>
               </div>
             </div>
 
@@ -120,7 +120,7 @@ Notes: ${formData.notes}`;
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full border-b border-ink/10 py-2 focus:border-gold outline-none transition-colors" 
-                    placeholder="julian@example.com" 
+                    placeholder="johan@custombedsdirect.co.za" 
                   />
                 </div>
                 <div className="space-y-2">
@@ -131,7 +131,7 @@ Notes: ${formData.notes}`;
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full border-b border-ink/10 py-2 focus:border-gold outline-none transition-colors" 
-                    placeholder="+44 20 7123 4567" 
+                    placeholder="012 881 6555" 
                   />
                 </div>
                 <div className="space-y-2">

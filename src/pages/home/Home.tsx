@@ -72,16 +72,38 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Brand Ethos - Moved up for context */}
+      {/* Brand Ethos - Updated with Mission */}
       <section className="max-w-4xl mx-auto px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl md:text-7xl font-serif mb-12 leading-tight italic">"A bed is not just a piece of furniture; it is a sanctuary where dreams are born."</h2>
-          <p className="text-xs uppercase tracking-[0.4em] font-bold text-gold">The Custom Beds Philosophy</p>
+          <h2 className="text-5xl md:text-7xl font-serif mb-12 leading-tight italic">"The luxury of individual comfort is the underlying quality that sets our products and service apart from the rest."</h2>
+          <p className="text-xs uppercase tracking-[0.4em] font-bold text-gold">Our Mission & Promise</p>
         </motion.div>
+      </section>
+
+      {/* Why Choose Custom Bed Direct */}
+      <section className="max-w-7xl mx-auto px-4 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div className="space-y-4">
+            <h3 className="text-xl font-serif italic text-gold">Dual Comfort</h3>
+            <p className="text-xs text-ink/60 leading-relaxed uppercase tracking-widest font-bold">Dual weight response in one mattress. No more compromises.</p>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-serif italic text-gold">Recessed Design</h3>
+            <p className="text-xs text-ink/60 leading-relaxed uppercase tracking-widest font-bold">Our base design prevents mattresses from sliding apart.</p>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-serif italic text-gold">Hygiene First</h3>
+            <p className="text-xs text-ink/60 leading-relaxed uppercase tracking-widest font-bold">Every mattress features a removable, washable, and replaceable cover.</p>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-serif italic text-gold">Personalized Style</h3>
+            <p className="text-xs text-ink/60 leading-relaxed uppercase tracking-widest font-bold">Headboards custom-made to your preference and aesthetic.</p>
+          </div>
+        </div>
       </section>
 
       {/* Categories Grid */}
@@ -194,6 +216,34 @@ const Home = () => {
         )}
       </section>
 
+      {/* Mattress Technology Spotlight */}
+      <section className="py-32 bg-paper">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-20">
+            <p className="text-gold text-[10px] uppercase tracking-[0.4em] mb-4 font-bold">The Collection</p>
+            <h2 className="text-5xl md:text-7xl font-serif italic">Specialized Innovations</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            {[
+              { name: "Sensation", features: "Latex & Memory Foam, Blue Gel Technology", warranty: "10 Year" },
+              { name: "LuxLine", features: "Extra Lumber Support, High Density Core", warranty: "10 Year" },
+              { name: "Dream-o-pedic", features: "Square Cut High Density Core", warranty: "10 Year" },
+              { name: "Snooze-o-pedic", features: "Entry Level Luxury, High Density", warranty: "10 Year" },
+              { name: "Econo", features: "Medium Density Core, Max Comfort", warranty: "5 Year" }
+            ].map((tech, i) => (
+              <div key={i} className="p-8 border border-ink/5 bg-white space-y-4 hover:border-gold/30 transition-colors group">
+                <h4 className="text-xl font-serif text-ink group-hover:text-gold transition-colors">{tech.name}</h4>
+                <p className="text-[10px] leading-relaxed text-ink/60 uppercase tracking-widest font-bold">{tech.features}</p>
+                <div className="pt-4 border-t border-ink/5 flex justify-between items-center">
+                  <span className="text-[9px] uppercase tracking-widest font-bold text-ink/40">Warranty</span>
+                  <span className="text-[10px] font-bold text-gold">{tech.warranty}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Materials Section */}
       <section className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -233,6 +283,46 @@ const Home = () => {
                   <p className="text-xs text-ink/60">Sustainably harvested hardwoods for bases that last a lifetime.</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Innovation Section - Dual Comfort */}
+      <section className="bg-ink text-paper py-32 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div>
+              <p className="text-gold text-[10px] uppercase tracking-[0.4em] mb-4 font-bold">The Science of Sleep</p>
+              <h2 className="text-5xl md:text-8xl font-serif mb-8 italic text-white line-height-[0.9]">Dual Comfort <br /> Innovation</h2>
+              <p className="text-paper/60 text-lg leading-relaxed mb-12">
+                Our uniquely designed dual comfort system allows for independent weight response within a single mattress. By combining the base's recessed design with our high-density core technology, we eliminate the 'split' feeling while providing personalized support for both individuals.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="w-2 h-2 bg-gold rounded-full"></div>
+                  <span className="text-xs uppercase tracking-widest font-bold opacity-80 decoration-gold/50 underline">Blue Gel Temperature Protection</span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="w-2 h-2 bg-gold rounded-full"></div>
+                  <span className="text-xs uppercase tracking-widest font-bold opacity-80 decoration-gold/50 underline">Latex & Memory Foam Fusion</span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="w-2 h-2 bg-gold rounded-full"></div>
+                  <span className="text-xs uppercase tracking-widest font-bold opacity-80 decoration-gold/50 underline">Removable Washable Covers</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="aspect-square border border-gold/20 p-8 rounded-full animate-spin-slow absolute inset-0 -z-10"></div>
+              <img 
+                src="/images/custombedsforallroomsetups.png" 
+                alt="Dual Comfort System" 
+                className="w-full aspect-square object-cover rounded-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </div>
@@ -295,25 +385,25 @@ const Home = () => {
       <section className="max-w-7xl mx-auto px-4 mb-32">
         <div className="bg-ink text-paper p-12 md:p-20 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
-            <h2 className="text-5xl md:text-7xl font-serif mb-8 italic">Visit Our Atelier</h2>
-            <p className="text-paper/60 mb-12 leading-relaxed">Experience the comfort firsthand. Our flagship atelier in Mayfair offers a private viewing experience where you can feel our materials and discuss your custom requirements with our design team.</p>
+            <h2 className="text-5xl md:text-7xl font-serif mb-8 italic">Visit Our Factory</h2>
+            <p className="text-paper/60 mb-12 leading-relaxed">Experience the comfort firsthand. Our factory premises in Bashewa, Pretoria offer a private consultation experience where you can feel our materials and discuss your custom requirements with our team.</p>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <MapPin size={18} className="text-gold" />
-                <span className="text-sm text-paper/80">12 Bruton Street, Mayfair, London</span>
+                <span className="text-sm text-paper/80">Bashewa, South Africa</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Phone size={18} className="text-gold" />
-                <span className="text-sm text-paper/80">+44 (0) 20 7123 4567</span>
+                <span className="text-sm text-paper/80">012 881 6555</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Mail size={18} className="text-gold" />
-                <span className="text-sm text-paper/80">atelier@custombeds.com</span>
+                <span className="text-sm text-paper/80">johan@custombedsdirect.co.za</span>
               </div>
             </div>
           </div>
           <div className="h-[400px] bg-white/5 overflow-hidden">
-            <img src="/images/visitourfactorypremises.png" alt="Atelier" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+            <img src="/images/visitourfactorypremises.png" alt="Our Factory" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
