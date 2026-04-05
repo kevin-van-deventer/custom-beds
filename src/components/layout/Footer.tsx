@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => (
-  <footer className="bg-ink text-paper py-20 mt-20">
-    <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+  <footer className="bg-ink text-paper py-16 md:py-20 mt-20">
+    <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
       <div>
         <h3 className="text-2xl font-serif mb-6 italic">Custom Beds</h3>
         <p className="text-paper/60 text-sm leading-relaxed">

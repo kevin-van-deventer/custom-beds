@@ -31,8 +31,8 @@ const CategoryPage = () => {
     <div className="max-w-7xl mx-auto px-4 py-20">
       <header className="mb-20 text-center">
         <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-4 font-bold">Collections</p>
-        <h1 className="text-5xl font-serif mb-6">{categoryName}</h1>
-        <div className="flex justify-center space-x-8 text-xs uppercase tracking-widest font-medium text-ink/40">
+        <h1 className="text-4xl md:text-5xl font-serif mb-6">{categoryName}</h1>
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs uppercase tracking-widest font-medium text-ink/40 px-4">
           <Link to="/category/mattresses" className={slug === 'mattresses' ? 'text-gold' : ''}>Mattresses</Link>
           <Link to="/category/bases" className={slug === 'bases' ? 'text-gold' : ''}>Bases</Link>
           <Link to="/category/headboards" className={slug === 'headboards' ? 'text-gold' : ''}>Headboards</Link>

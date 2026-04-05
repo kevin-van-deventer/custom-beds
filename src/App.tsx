@@ -45,7 +45,7 @@ function AppContent() {
           </Routes>
         </React.Suspense>
       </main>
-      {!isAdminRoute && <ContactCTA />}
+      {!isAdminRoute && location.pathname !== '/contact' && <ContactCTA />}
       <Footer />
     </div>
   );

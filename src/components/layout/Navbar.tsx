@@ -31,7 +31,8 @@ const Navbar = () => {
               loading="lazy"
               decoding="async"
             />
-            <span className="text-2xl font-serif tracking-widest uppercase italic">Custom Beds</span>
+            <span className="hidden sm:inline text-2xl font-serif tracking-widest uppercase italic">Custom Beds</span>
+            <span className="sm:hidden text-xl font-serif tracking-widest uppercase italic">CBD</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">

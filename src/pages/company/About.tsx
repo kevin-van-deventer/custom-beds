@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className="space-y-32 pb-32 overflow-hidden">
+    <div className="space-y-20 md:space-y-32 pb-32 overflow-hidden">
       {/* Hero Header - Redesigned for Contrast & Style */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-ink">
         <div className="absolute inset-0 z-0">
@@ -28,7 +28,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-white text-xs uppercase tracking-[0.5em] mb-8 font-bold">The Heritage of Custom Bed Direct</p>
-            <h1 className="text-white text-6xl md:text-9xl font-serif mb-12 leading-[0.9] tracking-tight">
+            <h1 className="text-white text-5xl sm:text-7xl md:text-9xl font-serif mb-12 leading-[0.9] tracking-tight">
               Bespoke <br /> <span className="italic">Sleep Innovation</span>
             </h1>
             <div className="w-24 h-[1px] bg-gold/50 mx-auto mb-12"></div>
@@ -53,7 +53,7 @@ const About = () => {
               <History size={20} />
               <span className="text-xs uppercase tracking-[0.3em] font-bold">Our Journey</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-serif leading-tight">A Legacy of <br /><span className="italic">Excellence</span></h2>
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif leading-tight">A Legacy of <br /><span className="italic">Excellence</span></h2>
             <div className="space-y-6 text-ink/70 leading-relaxed text-lg">
               <p>
                 Founded by Schalk Swanepoel and Johan Redelinghuys, Custom Bed Direct was born from a deep understanding of the bed manufacturing industry and a mission to solve the challenges of shared comfort.
@@ -100,9 +100,9 @@ const About = () => {
       {/* The Craftsmanship - Grid Layout */}
       <section className="bg-paper py-32">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-24">
+          <div className="text-center mb-16 md:mb-24">
             <p className="text-gold text-xs uppercase tracking-[0.4em] mb-4 font-bold">The Custom Beds Standard</p>
-            <h2 className="text-5xl md:text-7xl font-serif italic">Uncompromising Detail</h2>
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif italic">Uncompromising Detail</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
@@ -158,13 +158,13 @@ const About = () => {
 
       {/* Sustainability Section */}
       <section className="max-w-7xl mx-auto px-4">
-        <div className="bg-ink text-white rounded-[2rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+        <div className="bg-ink text-white rounded-2xl md:rounded-[2rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
           <div className="p-12 md:p-24 flex flex-col justify-center space-y-8">
             <div className="inline-flex items-center space-x-4 text-gold">
               <Leaf size={20} />
               <span className="text-xs uppercase tracking-[0.3em] font-bold">Ethical Sourcing</span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-serif leading-tight">Kind to the <br /><span className="italic">Environment</span></h2>
+            <h2 className="text-3xl md:text-6xl font-serif leading-tight">Kind to the <br /><span className="italic">Environment</span></h2>
             <p className="text-white/60 leading-relaxed text-lg">
               Custom Bed Direct’ mission is to supply a unique quality product, competitive pricing, and excellent customer service. Currently only supplying inland and the Western Cape, our vision is to provide the same high-quality product and customer satisfaction across South Africa.
             </p>
@@ -183,8 +183,8 @@ const About = () => {
       </section>
 
       {/* Stats Section - Updated Styling */}
-      <section className="max-w-7xl mx-auto px-4 py-20 border-y border-ink/5">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+      <section className="max-w-7xl mx-auto px-4 py-12 md:py-20 border-y border-ink/5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
           <div>
             <p className="text-5xl font-serif text-gold mb-2">15yr</p>
             <p className="text-[10px] uppercase tracking-widest font-bold text-ink/40">Industrial Mastery</p>
@@ -240,7 +240,7 @@ const About = () => {
               <Users size={20} />
               <span className="text-xs uppercase tracking-[0.3em] font-bold">The Directorship</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-serif leading-tight">Mastering <br /><span className="italic">Operations</span></h2>
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif leading-tight">Mastering <br /><span className="italic">Operations</span></h2>
             <div className="space-y-6 text-ink/70 leading-relaxed text-lg">
               <p>
                 <strong>Johan Redelinghuys</strong> brings 30 years of operational and factory management expertise to Custom Bed Direct. Formerly a Product Group Manager for ABB South Africa, Johan was responsible for building world-class manufacturing plants, ensuring our production remains at a global standard.
@@ -280,7 +280,7 @@ const About = () => {
           <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gold via-transparent to-transparent"></div>
           </div>
-          <h3 className="text-3xl md:text-5xl font-serif mb-6 italic">"Our hands tell the story of your rest."</h3>
+          <h3 className="text-2xl sm:text-3xl md:text-5xl font-serif mb-6 italic">"Our hands tell the story of your rest."</h3>
           <div className="flex items-center justify-center space-x-4">
             <div className="h-[1px] w-12 bg-gold/50"></div>
             <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-gold">The Custom Beds Collective</p>
@@ -288,6 +288,7 @@ const About = () => {
           </div>
         </motion.div>
       </section>
+
     </div>
   );
 };

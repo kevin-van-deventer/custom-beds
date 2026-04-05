@@ -119,7 +119,7 @@ const CustomBeds = () => {
           >
             <div className="max-w-5xl mx-auto px-4">
               <p className="text-gold text-xs uppercase tracking-[0.8em] mb-4 font-bold">The Atelier Experience</p>
-              <h1 className="text-ink text-7xl md:text-[10rem] font-serif leading-[0.85] tracking-tighter">
+              <h1 className="text-ink text-5xl sm:text-7xl md:text-[10rem] font-serif leading-[0.85] tracking-tighter">
                 Bespoke <br /> <span className="italic text-gold">Sanctuaries</span>
               </h1>
             </div>
@@ -139,9 +139,9 @@ const CustomBeds = () => {
       </section>
 
       {/* The Journey: Alternating Immersive Sections */}
-      <div className="py-32">
+      <div className="py-16 md:py-32">
         {steps.map((step, index) => (
-          <section key={index} className="relative mb-32 last:mb-0">
+          <section key={index} className="relative mb-20 md:mb-32 last:mb-0">
             <div className={`max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
               
               {/* Image Side */}
@@ -213,11 +213,11 @@ const CustomBeds = () => {
       </div>
 
       {/* Unique Design Component: Material Palette */}
-      <section className="bg-ink py-32 relative overflow-hidden">
+      <section className="bg-ink py-16 md:py-32 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <div className="text-center mb-24">
+          <div className="text-center mb-16 md:mb-24">
             <p className="text-gold text-[10px] uppercase tracking-[0.4em] mb-4 font-bold">The Library</p>
-            <h2 className="text-white text-5xl md:text-7xl font-serif">A World of <span className="italic">Textures</span></h2>
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif text-white">A World of <span className="italic">Textures</span></h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -253,7 +253,7 @@ const CustomBeds = () => {
       </section>
 
       {/* Unique Design Component: Technical Grid */}
-      <section className="py-32 max-w-7xl mx-auto px-4">
+      <section className="py-16 md:py-32 max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-1 space-y-8">
             <h3 className="text-4xl font-serif">Precision in <br /> Every <span className="italic">Dimension</span></h3>
@@ -273,14 +273,14 @@ const CustomBeds = () => {
               ))}
             </ul>
           </div>
-          <div className="lg:col-span-2 grid grid-cols-2 gap-4">
+          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="aspect-square bg-ink/5 rounded-3xl overflow-hidden">
               <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" alt="Detail" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
             </div>
-            <div className="aspect-square bg-gold/10 rounded-3xl flex items-center justify-center p-12 text-center">
+            <div className="aspect-square bg-gold/10 rounded-3xl flex items-center justify-center p-8 sm:p-12 text-center">
               <div>
                 <Sparkles size={48} className="text-gold mx-auto mb-6" />
-                <p className="text-2xl font-serif italic">"A bed that fits you like a tailored suit."</p>
+                <p className="text-xl sm:text-2xl font-serif italic">"A bed that fits you like a tailored suit."</p>
               </div>
             </div>
             <div className="col-span-2 h-64 bg-ink rounded-3xl overflow-hidden relative">
@@ -289,39 +289,6 @@ const CustomBeds = () => {
                 <p className="text-white text-xs uppercase tracking-[0.5em] font-bold">Handcrafted in London</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA: Start Your Journey */}
-      <section className="py-32 bg-paper">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-ink rounded-[4rem] p-12 md:p-24 text-center relative overflow-hidden">
-            <div className="absolute inset-0 opacity-10 pointer-events-none">
-              <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gold via-transparent to-transparent"></div>
-            </div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="relative z-10 space-y-10"
-            >
-              <p className="text-gold text-[10px] uppercase tracking-[0.6em] font-bold">Your Project Starts Here</p>
-              <h2 className="text-white text-5xl md:text-8xl font-serif leading-tight">Ready to <br /><span className="italic text-gold">Begin?</span></h2>
-              <p className="text-white/40 text-lg max-w-2xl mx-auto leading-relaxed">
-                Submit your initial requirements and our master designers will contact you to start the journey of creating your bespoke sanctuary.
-              </p>
-              <div className="pt-8">
-                <button 
-                  onClick={() => setIsModalOpen(true)}
-                  className="bg-gold text-white px-16 py-6 uppercase text-[12px] tracking-[0.3em] font-bold hover:bg-white hover:text-ink transition-all duration-500 shadow-2xl flex items-center space-x-4 mx-auto"
-                >
-                  <span>Start Your Bespoke Project</span>
-                  <ArrowRight size={18} />
-                </button>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>

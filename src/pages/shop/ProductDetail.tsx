@@ -85,9 +85,9 @@ const ProductDetail = () => {
         </div>
 
         {/* Info */}
-        <div className="flex flex-col">
+        <div className="flex flex-col pt-10 md:pt-0">
           <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-4 font-bold">{product.category}</p>
-          <h1 className="text-5xl font-serif mb-6">{product.name}</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-6">{product.name}</h1>
           <p className="text-2xl font-light mb-8">${product.price.toLocaleString()}</p>
           
           <div className="prose prose-sm text-ink/60 mb-12 max-w-none">

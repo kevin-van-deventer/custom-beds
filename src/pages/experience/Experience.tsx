@@ -28,7 +28,7 @@ const Experience = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
             <p className="text-white text-xs uppercase tracking-[0.6em] mb-8 font-bold">The Art of Bespoke Sleep</p>
-            <h1 className="text-white text-6xl md:text-9xl font-serif mb-12 leading-[0.9] tracking-tight">
+            <h1 className="text-white text-5xl sm:text-7xl md:text-9xl font-serif mb-12 leading-[0.9] tracking-tight">
               A Legacy of <br /> <span className="italic">Excellence</span>
             </h1>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
@@ -48,7 +48,7 @@ const Experience = () => {
       </section>
 
       {/* The Heritage (Company) */}
-      <section className="py-32 max-w-7xl mx-auto px-4">
+      <section className="py-16 md:py-32 max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -58,7 +58,7 @@ const Experience = () => {
           >
             <div>
               <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-6 font-bold">The Heritage</p>
-              <h2 className="text-5xl md:text-7xl font-serif mb-8 leading-tight">Born from a <br /> Passion for <br /> <span className="italic">Restoration</span></h2>
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-8 leading-tight">Born from a <br /> Passion for <br /> <span className="italic">Restoration</span></h2>
               <p className="text-ink/60 text-lg leading-relaxed font-light">
                 Custom Beds was founded on the belief that sleep is the ultimate luxury. Our story began in a small London atelier, where we set out to redefine the relationship between the body and the bed.
               </p>
@@ -94,11 +94,11 @@ const Experience = () => {
       </section>
 
       {/* The Craft (Process) */}
-      <section className="bg-ink text-paper py-32">
+      <section className="bg-ink text-paper py-16 md:py-32">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-24">
             <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-6 font-bold">The Process</p>
-            <h2 className="text-5xl md:text-7xl font-serif">Bespoke by Design</h2>
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif">Bespoke by Design</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative">
@@ -147,7 +147,7 @@ const Experience = () => {
       </section>
 
       {/* Quality & Materials */}
-      <section className="py-32">
+      <section className="py-16 md:py-32">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="order-2 lg:order-1">
@@ -168,7 +168,7 @@ const Experience = () => {
             >
               <div>
                 <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-6 font-bold">Uncompromising Quality</p>
-                <h2 className="text-5xl md:text-7xl font-serif mb-8">Nature's <br /> <span className="italic">Purest</span> Elements</h2>
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-8">Nature's <br /> <span className="italic">Purest</span> Elements</h2>
                 <p className="text-ink/60 text-lg leading-relaxed font-light">
                   We reject synthetic foams and chemical adhesives. Instead, we embrace the natural resilience of horsehair, the softness of cashmere, and the breathability of organic cotton.
                 </p>
@@ -193,10 +193,10 @@ const Experience = () => {
       </section>
 
       {/* Concierge Service (Customer Service) */}
-      <section className="bg-paper py-32 border-y border-ink/5">
+      <section className="bg-paper py-16 md:py-32 border-y border-ink/5">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-6 font-bold">Service Beyond Compare</p>
-          <h2 className="text-5xl md:text-7xl font-serif mb-12">The Concierge <br /> <span className="italic">Promise</span></h2>
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-12">The Concierge <br /> <span className="italic">Promise</span></h2>
           <p className="text-ink/60 text-xl leading-relaxed font-light mb-16">
             Your journey with Custom Beds doesn't end at purchase. Our white-glove concierge service ensures every aspect of your experience is seamless, from the first consultation to the final installation and beyond.
           </p>
@@ -221,19 +221,6 @@ const Experience = () => {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-40 text-center relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10">
-          <img src="/images/premiumcoversforbases.jpeg" alt="Background" className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" decoding="async" />
-        </div>
-        <div className="relative z-10 max-w-3xl mx-auto px-4">
-          <h2 className="text-5xl md:text-8xl font-serif mb-12">Ready to <br /> <span className="italic">Transform</span> Your Sleep?</h2>
-          <Link to="/contact" className="inline-flex items-center space-x-4 bg-ink text-paper px-12 py-6 uppercase text-[10px] tracking-[0.4em] font-bold hover:bg-gold transition-all duration-700 shadow-2xl">
-            <span>Book a Consultation</span>
-            <ArrowRight size={16} />
-          </Link>
-        </div>
-      </section>
     </div>
   );
 };

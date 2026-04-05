@@ -79,9 +79,9 @@ const Cart = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
-                className="flex items-center space-x-8 pb-12 border-b border-ink/5"
+                className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-8 pb-12 border-b border-ink/5"
               >
-                <div className="w-32 h-40 bg-ink/5 overflow-hidden">
+                <div className="w-full sm:w-32 h-64 sm:h-40 bg-ink/5 overflow-hidden">
                   <img
                     src="/images/mattressdisplayimagehomepage.jpg"
                     alt={item.name}
@@ -91,7 +91,7 @@ const Cart = () => {
                     decoding="async"
                   />
                 </div>
-                <div className="flex-grow">
+                <div className="flex-grow w-full">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-serif">{item.name}</h3>
                     <button onClick={() => removeItem(item.productId)} className="text-ink/40 hover:text-red-500 transition-colors">
