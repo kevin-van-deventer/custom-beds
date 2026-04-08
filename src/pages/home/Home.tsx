@@ -85,7 +85,7 @@ const Home = () => {
       </section>
 
       {/* Why Choose Custom Bed Direct */}
-      <section className="max-w-7xl mx-auto px-4 py-20">
+      <section className="max-w-7xl mx-auto px-4 pb-20 md:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-4">
             <h3 className="text-xl font-serif italic text-gold">Dual Comfort</h3>
@@ -356,7 +356,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="max-w-7xl mx-auto px-4 py-32">
+      <section className="max-w-7xl mx-auto px-4 py-16 md:py-32">
         <div className="text-center mb-20">
           <p className="text-[10px] uppercase tracking-[0.4em] text-gold mb-4 font-bold">Voices of Comfort</p>
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif italic">Client Stories</h2>

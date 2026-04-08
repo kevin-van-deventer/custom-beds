@@ -62,7 +62,7 @@ const CustomBeds = () => {
       title: "The Showroom at Home",
       subtitle: "Step 02",
       description: "We bring the showroom to you. Book an appointment with our expert team and experience the true quality of our materials and luxury finishes in the comfort of your home.",
-      image: "/images/deliveryandinstallation.png",
+      image: "/images/showroomathome.png",
       accent: "bg-ink/5"
     },
     {
@@ -95,9 +95,9 @@ const CustomBeds = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=1920"
+            src="/images/showroomathome.png"
             alt="Bespoke Bed Craftsmanship"
-            className="w-full h-full object-cover scale-105"
+            className="w-full h-full object-cover scale-105 brightness-[0.6]"
             referrerPolicy="no-referrer"
             loading="lazy"
             decoding="async"
@@ -108,6 +108,7 @@ const CustomBeds = () => {
           <div className="absolute inset-0 opacity-20 pointer-events-none">
             <div className="w-full h-full" style={{ backgroundImage: 'radial-gradient(circle, #141414 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
           </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-transparent to-ink/60"></div>
         </div>
 
         <div className="relative z-10 text-center w-full">
@@ -118,9 +119,9 @@ const CustomBeds = () => {
             className="space-y-8"
           >
             <div className="max-w-5xl mx-auto px-4">
-              <p className="text-gold text-xs uppercase tracking-[0.8em] mb-4 font-bold">The Atelier Experience</p>
-              <h1 className="text-ink text-5xl sm:text-7xl md:text-[10rem] font-serif leading-[0.85] tracking-tighter">
-                Bespoke <br /> <span className="italic text-gold">Sanctuaries</span>
+              <p className="text-white text-xs uppercase tracking-[0.4em] mb-8 font-medium">The Atelier Experience</p>
+              <h1 className="text-white text-5xl sm:text-7xl md:text-9xl font-serif mb-12 leading-[0.9] tracking-tight">
+                Bespoke <br /> <span className="italic">Sanctuaries</span>
               </h1>
             </div>
 
