@@ -329,7 +329,7 @@ const Home = () => {
       </section>
 
       {/* Covers Showcase */}
-      <section className="bg-paper py-32 border-y border-ink/5">
+      <section className="bg-paper py-16 md:py-32 border-y border-ink/5">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-8">
             <div className="max-w-xl">
